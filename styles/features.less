@@ -1,0 +1,50 @@
+.features {
+
+    &__wrapper {
+        padding: 120px 0 33px 0;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .features-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            padding-bottom: 100px;
+
+            &__icon {
+                // width: 100px;
+                margin-bottom: 29px;
+            }
+
+            &__title {
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                h3 {
+                    .font-normal-big;
+                    color: @shark-text-color;
+                    text-transform: uppercase;
+                }
+            }
+
+            &__text {
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                h5 {
+                    .font-normal-basic;
+                    color: @nevada-text-color;
+                }
+            }
+        }
+    }
+    
+}
+
