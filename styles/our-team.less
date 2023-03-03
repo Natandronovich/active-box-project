@@ -1,0 +1,77 @@
+.our-team {
+    
+    &__wrapper {
+        padding: 110px 0;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .team-card {
+        
+        &__avatar {
+            margin-bottom: 31px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__info-name {
+            h3 {
+                margin-bottom: 8px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                text-transform: capitalize;
+                color: @shark-text-color;
+            }
+        }
+
+        &__info-profession {
+            margin-bottom: 18px;
+
+            h5 {
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                .font-normal-basic;
+                color:@red-text-color;
+                margin-bottom: 18px;
+                margin: 0px;
+            }
+        }
+
+        &__text {
+            margin-bottom: 35px;
+
+            p {
+                display: flex;
+                align-items: center;
+                .font-normal-basic;
+                color:@nevada-text-color;
+            }
+        }
+
+        &__social-icon {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li{
+                    margin-right: 6px;
+
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
