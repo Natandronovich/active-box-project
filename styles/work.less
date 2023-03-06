@@ -6,6 +6,7 @@
     &__cards {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        gap: 2px;
     }
 
     &__card {
@@ -15,6 +16,7 @@
             .work-card__text {
                 display: flex;
                 transition: all ease-in-out 0.3s;
+                cursor: pointer;
             }
         }
 
@@ -27,12 +29,6 @@
         }
 
         .work-card {
-            &__image {
-
-                .image-border {
-                    border: 2px solid #FFFFFF;
-                }
-            }
 
             &__text {
                 display: flex;
