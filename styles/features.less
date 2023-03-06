@@ -2,6 +2,10 @@
 
     &__wrapper {
         padding: 116px 0 39px 0;
+
+        @media screen and (max-width: 1024px) {
+            padding: 77px 0 33px 0;
+        }
     }
 
     &__cards {
@@ -16,9 +20,24 @@
             max-width: 370px;
             padding-bottom: 52px;
 
+            @media screen and (max-width: 1150px) {
+                max-width: 315px;
+                padding-bottom: 30px;
+            }
+
+            @media screen and (max-width: 1024px) {
+                padding-bottom: 22px;
+            }
+
             &__icon {
                 // width: 100px;
                 margin-bottom: 29px;
+
+                @media screen and (max-width: 1024px) {
+                    max-width: 85px;
+                    height: 85px;
+                    margin-bottom: 35px;
+                }
             }
 
             &__title {
@@ -27,10 +46,18 @@
                 text-align: center;
                 padding: 21px 0;
 
+                @media screen and (max-width: 1024px) {
+                    padding: 6px 0;
+                }
+
                 h3 {
                     .font-normal-big;
                     color: @shark-text-color;
                     text-transform: uppercase;
+
+                    @media screen and (max-width: 1024px) {
+                        .font-normal-big-media1024
+                    }
                 }
             }
 
@@ -42,6 +69,10 @@
                 h5 {
                     .font-normal-basic;
                     color: @nevada-text-color;
+
+                    @media screen and (max-width: 1024px) {
+                        .font-normal-medium-media1024;
+                    }
                 }
             }
         }
