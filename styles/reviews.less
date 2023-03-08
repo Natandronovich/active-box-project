@@ -17,10 +17,18 @@
     &__image-wrapper {
         display: flex;
         max-width: 741px;
-        
-        @media screen and (max-width: 1150px) {
-            max-width: 580px;
+
+        @media screen and (max-width: 1230px) {
+            max-width: 670px;
         }
+
+        @media screen and (max-width: 1150px) {
+            max-width: 630px;
+        }
+        
+        // @media screen and (max-width: 1150px) {
+        //     max-width: 580px;
+        // }
 
         img {
             width: 100%;
@@ -32,6 +40,10 @@
         flex-direction: column;
         padding: 0 10px 0 129px;
         color: @white-text-color;
+
+        @media screen and (max-width: 1150px) {
+            padding: 0 10px 0 88px;
+        }
     }
 
     &__content-text {
@@ -98,7 +110,7 @@
     }
     
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1070px) {
         &__block {
             align-items: start;
             margin-bottom: 24px;

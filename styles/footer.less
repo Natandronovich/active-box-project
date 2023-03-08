@@ -14,7 +14,12 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
-            padding: 71px 0 67px 0;
+            padding: 72px 0 67px 0;
+
+            @media screen and (max-width: 1024px) {
+                gap: 20px;
+                padding: 48px 10px 41px 10px;
+            }
         }
     }
 
@@ -28,14 +33,27 @@
 
     &__card{
         .footer-card {
+            @media screen and (max-width: 1024px) {
+                max-width: 314px;
+            }
+
             &__title {
                 margin-bottom: 29px;
+
+                @media screen and (max-width: 1024px) {
+                    margin-bottom: 16px;
+                }
         
                 h3 {
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 21px;
                     text-transform: uppercase;
+
+                    @media screen and (max-width: 1024px) {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
                 }
             }
 
@@ -47,15 +65,11 @@
                 p {
                     .font-normal-basic;
                     text-transform: capitalize;
+
+                    @media screen and (max-width: 1110px) {
+                        .font-normal-basic-media1024;
+                    }
                 }
-            }
-        }
-
-        @media screen and (max-width: 1024px) {
-            max-width: 314px;
-
-            h5 {
-                .font-normal-basic-media1024;
             }
         }
     }
@@ -64,12 +78,21 @@
         .footer-social {
             &__title {
                 margin-bottom: 49px;
+
+                @media screen and (max-width: 1110px) {
+                    margin-bottom: 32px;
+                }
         
                 h3 {
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 21px;
                     text-transform: uppercase;
+
+                    @media screen and (max-width: 1024px) {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
                 }
             }
 
@@ -82,11 +105,17 @@
                     &:hover {
                         box-shadow: 0 5px 15px 0 rgba(253, 234, 234, 0.4);
                     }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    @media screen and (max-width: 1024px) {
+                        width: 33px;
+                        margin-right: 22px;
+                    }
                 }
         
-                li:last-child {
-                    margin-right: 0px;
-                }
             }
         }
     }
@@ -95,6 +124,10 @@
         background-color: @martinique-footer-background-color;
         width: 100%;
         padding: 24px 0;
+
+        @media screen and (max-width: 1110px) {
+            padding: 14px 0;
+        }
 
         &-wrapper {
             display: flex;
@@ -108,6 +141,11 @@
                 .font-normal-basic;
                 color: @gray-text-color;
                 text-transform: capitalize;
+
+                @media screen and (max-width: 1110px) {
+                    .font-normal-basic-media1024;
+                    max-width: 314px;
+                }
             }
         
             span {
