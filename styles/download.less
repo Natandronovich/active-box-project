@@ -69,14 +69,58 @@
             }
         }
 
-        &__description h5 {
-            font-size: 14px;
-            line-height: 16px;
-        }
+        &__description {
+            h5 {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        } 
 
         &__btn {
             .button-media1024;
             .font-normal-big-media1024;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        &__title {        
+            max-width: 416px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        &__wrapper {
+            padding: 47px 0;
+        }
+
+        &__header{
+            margin-bottom: 15px;
+        }
+
+        &__title {        
+            max-width: 280px;
+            text-align: center;
+
+            h3 {
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+
+        &__description {
+            text-align: center;
+            max-width: 280px;
+
+            h5 {
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+
+        &__btn {
+            width: 278px;
+            height: 77px;
         }
     }
 }
