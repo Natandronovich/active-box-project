@@ -7,6 +7,11 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2px;
+
+        
+        @media screen and (max-width: 770px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     &__card {
@@ -30,6 +35,12 @@
 
         .work-card {
 
+            &__image-wrapper {
+                @media screen and (max-width: 500px) {
+                    min-width: 160px;
+                }
+            }
+
             &__text {
                 display: flex;
                 flex-direction: column;
@@ -43,22 +54,65 @@
                 background: @abbey-background-color;
                 display: none;
 
-                .work-card__title {
-                    .font-normal-big;
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: @white-text-color;
-                    margin-bottom: 20px;
+                // .work-card__title {
+                //     .font-normal-big;
+                //     display: flex;
+                //     align-items: center;
+                //     text-align: center;
+                //     text-transform: uppercase;
+                //     color: @white-text-color;
+                //     margin-bottom: 20px;
+
+                //     @media screen and (max-width: 1024px) {
+                //         .font-normal-big-media1024;
+                //     }
+
+                //     @media screen and (max-width: 770px) {
+                //         margin-bottom: 10px;
+                //     }
+                // }
+
+                // .work-card__description {
+                //     .font-normal-basic;
+                //     display: flex;
+                //     align-items: center;
+                //     text-align: center;
+                //     color: @white-text-color;
+
+                //     @media screen and (max-width: 1024px) {
+                //         .font-normal-basic-media1024;
+                //     }
+                // }
+            }
+
+            &__title {
+                .font-normal-big;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                color: @white-text-color;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: 1024px) {
+                    .font-normal-big-media1024;
                 }
 
-                .work-card__description {
-                    .font-normal-basic;
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    color: @white-text-color;
+                @media screen and (max-width: 770px) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            
+            &__description {
+                .font-normal-basic;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: @white-text-color;
+
+                @media screen and (max-width: 1024px) {
+                    .font-normal-basic-media1024;
                 }
             }
         }
